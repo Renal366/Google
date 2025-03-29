@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+  </head>
+  <body>
+    <div
+      style="
+        text-align: center;
+        margin-top: 100px;
+        font-family: Arial, sans-serif;
+      "
+    >
+      <img
+        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        alt="Google Logo"
+        width="272"
+        height="92"
+      />
+      <form
+        action="https://www.google.com/search"
+        method="get"
+        style="margin-top: 20px"
+      >
+        <input
+          type="text"
+          name="q"
+          placeholder="Search Google or type a URL"
+          style="
+            width: 400px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          "
+          onkeypress="if(event.key === 'Enter') { this.form.submit(); }"
+        />
+        <br /><br />
+        <button
+          type="submit"
+          style="
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          "
+        >
+          Google Search
+        </button>
+        <button
+          type="button"
+          style="
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #34a853;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          "
+          onclick="window.location.href='https://www.google.com/doodles'"
+        >
+          I'm Feeling Lucky
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
